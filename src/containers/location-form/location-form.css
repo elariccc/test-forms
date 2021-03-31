@@ -1,0 +1,84 @@
+.location-form {
+  display: grid;
+  grid-template-columns: 100px 1fr 70px 1fr 80px 1fr;
+  grid-template-rows: 40px 40px 40px;
+  row-gap: 10px;
+  column-gap: 5px;
+  padding: 20px;
+  margin: 10px;
+  border: lightgrey 2px solid;
+  min-width: 860px;
+}
+
+.location-form__header {
+  grid-column: 1 / 6;
+  place-self: center start;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.location-form__header i {
+  padding-right: 10px;
+  font-size: xx-large;
+}
+
+.location-form__delete {
+  place-self: center end;
+  font-size: x-large;
+  color: orangered;
+  cursor: pointer;
+}
+
+.location-form__location-label {
+  place-self: center start;
+}
+
+.location-form__env-label {
+  place-self: center end;
+  padding-right: 5px;
+}
+
+.location-form__servers-label {
+  place-self: center end;
+  padding-right: 5px;
+}
+
+.location-form__servers-data {
+  place-self: center start;
+  padding-left: 5px;
+}
+
+.location-form__hint-label {
+  place-self: center start;
+}
+
+.location-form__hint-input {
+  grid-column: 2 / 7;
+}
+
+.input-with-icon {
+  padding-left: 5px;
+  white-space: nowrap;
+  font-family: 'FontAwesome', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.loading-background {
+  background: linear-gradient(to right, white 25%, darkgrey, white 75%);
+  animation: loading-animation 3s linear infinite;
+  background-size: 400% 100%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes loading-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
+}

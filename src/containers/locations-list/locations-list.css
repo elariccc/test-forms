@@ -1,0 +1,19 @@
+.locations-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-width: 923px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.locations-list__button {
+  align-self: flex-end;
+  display: flex;
+  margin: 0 10px 10px 10px;
+}
+
+.locations-list__button i {
+  margin-right: 10px;
+  font-size: x-large;
+}
